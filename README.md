@@ -1,3 +1,7 @@
+# React Template
+
+Dockerfile and nginx config for building a react app image
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
