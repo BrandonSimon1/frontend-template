@@ -1,6 +1,8 @@
-# React Template
+# Frontend Template
 
-Dockerfile and nginx config for building a react app image
+This is a frontend template based on create-react-app, with basic React Router and Apollo Client configuration added. The GraphQL URI for Apollo is provided through the environment; please see src/client.ts. A Dockerfile and nginx config are provided for building a production image. 
+
+Note: Unlike most react app images, the Dockerfile doesn't actually build the react app, as that forces environment variables to be set at image build time. Rather, it runs an entrypoint script which builds the react app and then starts nginx. Please see start.sh for details.
 
 # Getting Started with Create React App
 
