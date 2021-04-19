@@ -21,8 +21,9 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "graphql-codegen --watch & react-scripts start",
     "build": "react-scripts build",
+    "prebuild": "graphql-codegen",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -43,5 +44,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.21.4",
+    "@graphql-codegen/typed-document-node": "^1.18.5",
+    "@graphql-codegen/typescript": "^1.22.0",
+    "@graphql-codegen/typescript-operations": "^1.17.16",
+    "@graphql-typed-document-node/core": "^3.1.0"
   }
 }
